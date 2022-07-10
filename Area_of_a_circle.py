@@ -1,4 +1,3 @@
-pi=3.14
-r=float(input(""))
-area=pi*r*r
+r=int(input())
+area=3.14*r*r
 print("%.2f"%area)
