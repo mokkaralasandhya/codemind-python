@@ -1,7 +1,7 @@
-a=input()
-vo="aeiouAEIOU"
+s="aeiouAEIOU"
+n=input()
 c=0
-for i in a:
-    if i in vo:
+for i in n:
+    if i in s:
         c+=1
 print(c)
