@@ -1,6 +1,6 @@
 n=input()
 c=0
 for i in n:
-    if ord(i)>=97 and ord(i)<=122:
+    if i.islower():
         c+=1
 print(c)
