@@ -1,6 +1,7 @@
-n=input()
-s=n.split()
-l=len(s)
-f=s[0]
-la=s[l-1]
-print(min(f),max(la))
+l=list(map(str,input().split()))
+a=[]
+mi=min(l[0])
+ma=max(l[len(l)-1])
+a.append(mi)
+a.append(ma)
+print(*a)
