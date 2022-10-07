@@ -1,14 +1,12 @@
-n=input()
-n=n.lower()
-d=0
-for i in range(len(n)):
-    c=0
-    for j in range(len(n)):
-        if n[i]==n[j]:
-            c+=1
-    if c==1:
-        print(n[i])
-        d=1
+s=input()
+s=s.lower()
+a=0
+for i in range(len(s)):
+    if s[i]==' ':
+        continue
+    if s.count(s[i])==1:
+        print(s[i])
+        a=1
         break
-if d==0:
-    print("-1")
+if a==0:
+    print(-1)
