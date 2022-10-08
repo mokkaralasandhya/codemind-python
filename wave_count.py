@@ -1,12 +1,13 @@
 n=int(input())
 a=list(map(int,input().split()))
-c=k=0
+c=0
 for i in range(0,n-2,2):
-    if(a[i]>a[i+1] and a[i]>a[i-1]) or (a[i]<a[i+1] and a[i]<a[i-1]):
+    if a[i]<a[i+1] and a[i+1]>a[i+2]:
         c+=1
     else:
-        k+=1
-if k==0:
-    print(c)
+        c=0
+        break
+if c==0:
+    print('-1')
 else:
-    print(-1)
+    print(c)
