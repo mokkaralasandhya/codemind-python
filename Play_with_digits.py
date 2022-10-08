@@ -1,13 +1,14 @@
 def fun(n):
-    c=0
-    while(n):
+    s=0
+    while(n>0):
         r=n%10
-        c=c+r
+        s+=r
         n//=10
-    return c
+    return s
 n=int(input())
-k=0
-a=list(map(int,input().split()[:n]))
+a=list(map(int,input().split()))
+s=0
 for i in a:
-    k=k+fun(i)
-print(k)
+    c=fun(i)
+    s+=c
+print(s)
