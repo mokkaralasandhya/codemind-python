@@ -1,12 +1,14 @@
-a=int(input())
-b=input()
-arr=list(b.split())
-mi=100
-for i in arr:
-    if len(i)<mi:
-        mi=len(i)
-c=0
-for i in arr:
-    if len(i)==mi:
+def fun(n):
+    c=0
+    while(n):
+        r=n%10
         c+=1
-print(c)
+        n//=10
+    return c
+x=int(input())
+a=list(map(int,input().split()))
+f=[]
+for i in a:
+    f.append(fun(i))
+m=min(f)
+print(f.count(m))
