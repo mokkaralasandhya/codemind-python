@@ -1,14 +1,14 @@
 n=int(input())
-arr=list(map(int,input().split()))
-a,b=map(int,input().split())
+a=list(map(int,input().split()))
+x,y=map(int,input().split())
+k=0
 max=0
-c=0
 for i in range(n):
-    if arr[i]<a or arr[i]>b:
-        c+=1
-        if arr[i]>max:
-            max=arr[i]
-if c==0:
+    if a[i]<x or a[i]>y:
+        k=1
+        if a[i]>max:
+            max=a[i]
+if k==0:
     print(-1)
 else:
     print(max)
