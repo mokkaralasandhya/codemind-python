@@ -1,16 +1,14 @@
 n=int(input())
-arr=list(map(int,input().split()))
-a,b=map(int,input().split())
-min=999
-c=0
+a=list(map(int,input().split()))
+x,y=map(int,input().split())
+k=0
+min=9989
 for i in range(n):
-    if arr[i]<a or arr[i]>b:
-        c+=1
-        if arr[i]<min:
-            min=arr[i]
-if c==0:
+    if a[i]<x or a[i]>y:
+        k=1
+        if a[i]<min:
+            min=a[i]
+if k==0:
     print(-1)
 else:
     print(min)
-
-    
