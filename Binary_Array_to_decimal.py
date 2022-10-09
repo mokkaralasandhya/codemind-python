@@ -1,8 +1,9 @@
 n=int(input())
-arr=list(map(int,input().split()))
-sum=0
+a=list(map(int,input().split()))
+a=a[::-1]
+s=0
 k=0
-for i in range(n-1,-1,-1):
-    sum=sum+(2**k)*arr[i]
+for i in a:
+    s+=(i*(2**k))
     k+=1
-print(sum)
+print(s)
