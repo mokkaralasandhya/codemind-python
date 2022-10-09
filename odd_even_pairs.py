@@ -28,10 +28,12 @@ elif len(e)>len(o):
     if n%2==0:
         print(*k)
     else:
-        k.append(0)
+        k.append(0)        
         print(*k)
 else:
     for i in range(len(o)):
         k.append(o[i])
         k.append(e[i])
-    print(*k)
+    print(*k)    
+    
+        
