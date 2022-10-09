@@ -1,14 +1,16 @@
-def prime(n):
-    for i in range(2,int(n**0.5)+1):
+def fun(n):
+    for i in range(2,n):
         if n%i==0:
-            return False
+            return 0
     else:
-        return True
+        return 1
 n=int(input())
-arr=list(map(int,input().split()))
-k=int(input())
+a=list(map(int,input().split()))
+m=int(input())
 c=0
 for i in range(n):
-    if arr[i]<=k and prime(arr[i]) and arr[i]!=1:
+    if a[i]==1:
+        continue
+    if(fun(a[i])) and a[i]<=m:
         c+=1
 print(c)
