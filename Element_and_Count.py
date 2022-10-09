@@ -1,11 +1,11 @@
 n=int(input())
-arr=list(map(int,input().split()))
-k=[]
-p=[]
-r=[]
+a=list(map(int,input().split()))
+b=[]
+c=[]
 for i in range(n):
-    if arr[i] not in k:
-        k.append(arr[i])
-        p.append(arr.count(arr[i]))
-for i in range(len(k)):
-    print(k[i],p[i],end=" ")
+    if a[i] in b:
+        continue
+    b.append(a[i])
+    c.append(a[i])
+    c.append(a.count(a[i]))
+print(*c)
