@@ -1,7 +1,7 @@
 n=int(input())
-arr=list(map(int,input().split()))
-k=[]
-for i in range(n):
-    if arr[i] not in k:
-        k.append(arr[i])
-print(*k)
+a=list(map(int,input().split()))
+b=[]
+for i in a:
+    if i not in b:
+        b.append(i)
+print(*b)
