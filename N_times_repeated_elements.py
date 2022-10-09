@@ -1,11 +1,12 @@
 n=int(input())
-arr=list(map(int,input().split()))
+a=list(map(int,input().split()))
 b=int(input())
-k=[]
-for i in range(n):
-    if arr.count(arr[i])==b and arr[i] not in k:
-        k.append(arr[i])
-if len(k)==0:
+k=set(a)
+k=list(k)
+c=0
+for i in k:
+    if a.count(i)==b:
+        c=1
+        print(i,end=' ')
+if c==0:
     print(-1)
-else:
-    print(*k)
