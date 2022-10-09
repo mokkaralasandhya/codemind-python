@@ -25,4 +25,3 @@ for i in range(b,b1+1):
     if(prime(a[i])):
         c+=1
 print(c)
-    
