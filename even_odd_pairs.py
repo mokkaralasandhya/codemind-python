@@ -1,6 +1,7 @@
 n=int(input())
 a=list(map(int,input().split()))
 e=[]
+
 o=[]
 k=[]
 for j in range(n):
@@ -28,10 +29,12 @@ elif len(e)>len(o):
     if n%2==0:
         print(*k)
     else:
-        k.append(0)
+        k.append(0)        
         print(*k)
 else:
     for i in range(len(o)):
         k.append(e[i])
         k.append(o[i])
-    print(*k)
+    print(*k)    
+    
+        
