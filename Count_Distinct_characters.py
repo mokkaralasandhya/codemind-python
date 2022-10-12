@@ -1,9 +1,12 @@
-s=input()
-s=s.lower()
-a=[]
-for i in range(len(s)):
-    if s[i]==' ':
-        continue
-    if s[i] not in a:
-        a.append(s[i])
-print(len(a))
+a=input()
+a=a.lower()
+a=set(a)
+d=len(a)
+for i in a:
+    if i==' ':
+        print(d-1)
+        break
+else:
+    print(d)
+    
+#print(a)
