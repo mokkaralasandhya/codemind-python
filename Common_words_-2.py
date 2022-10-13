@@ -9,4 +9,4 @@ for i in s:
     if s.count(i)==1 and i in s1:
         if s1.count(i)==1:
             c+=1
-print(c)
+print(c)     
