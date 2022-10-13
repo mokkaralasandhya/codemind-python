@@ -1,9 +1,14 @@
-a=input()
-vo="aeiou"
-c=0
-for i in vo:
-    if i not in a:
-        print(i,end=" ")
-        c+=1
-if(c==0):
+s=input()
+s=s.lower()
+a='aeiou'
+k=''
+m=0
+for i in s:
+    if i in a:
+       k=k+i
+for i in a:
+    if i not in k:
+        m=1
+        print(i,end=' ')
+if m==0:
     print(0)
