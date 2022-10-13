@@ -17,5 +17,5 @@ for i in x:
             k+=1
         c=0
     if i in a:
-        c+=1
-print(k)
+        c+=1   
+print(k) 
