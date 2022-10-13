@@ -10,4 +10,4 @@ for i in x:
         c=0
     if i in a:
         c+=1
-print(max)
+print(max)      
