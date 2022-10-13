@@ -1,13 +1,15 @@
-s=input()
-arr="abcdefghijklmnopqrstuvwxyz"
-c=v=0
-for i in arr:
-    if i in s or i.upper() in s:
-        c+=1
-    else:
-        v=1
-        break
-if(v!=1):
-    print(True)
+import string
+
+def ispangram(str):
+	alphabet = "abcdefghijklmnopqrstuvwxyz"
+	for char in alphabet:
+		if char not in str.lower():
+			return False
+
+	return True
+	
+string = input()
+if(ispangram(string) == True):
+	print(True)
 else:
-    print(False)
+	print(False)
