@@ -7,5 +7,5 @@ for i in s:
     if i==' ':
         continue
     if i in s1 and i not in a:
-        a+=i
-print(len(a))
+        a=a+i
+print(len(a))    
