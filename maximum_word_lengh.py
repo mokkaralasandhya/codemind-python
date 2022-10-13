@@ -1,9 +1,6 @@
-n=input()
-s=n.split()
-c=0
-max=0
+s=input()
+b=[]
+s=s.split()
 for i in s:
-    c=len(i)
-    if max<c:
-        max=c
-print(max)
+    b.append(len(i))
+print(max(b))
