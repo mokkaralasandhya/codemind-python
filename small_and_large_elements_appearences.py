@@ -10,3 +10,4 @@ for i in b:
         min=i
 c=b.index(min)
 print(s[c],s.count(s[c]),s[a1],s.count(s[a1]))
+    
