@@ -1,3 +1,5 @@
-l=list(map(str,input().split()))
-s=l[len(l)-1]
-print(s[0])
+s=input()
+s=s.split()
+k=len(s)
+a=s[k-1]
+print(a[0])
